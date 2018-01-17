@@ -15,4 +15,4 @@ def bottle():
 @route('/Pic')
 def Pic():
     return "Here is pictures of steve jobs"
-run()
+run(host='0.0.0.0', port=os.environ.get('PORT'))
